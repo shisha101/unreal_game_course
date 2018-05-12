@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/.vscode": true,
+		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Content": true,
+		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Intermediate": true
+	}
+}
