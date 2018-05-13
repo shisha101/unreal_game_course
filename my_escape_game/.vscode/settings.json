@@ -1,7 +1,11 @@
 {
 	"files.exclude": {
-		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/.vscode": true,
-		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Content": true,
-		"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Intermediate": true
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/.idea": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/.kdev4": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/.vscode": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/Content": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/DerivedDataCache": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/Intermediate": true,
+		"/home/shisha/Projects/unreal_game_course/my_escape_game/Saved": true
 	}
 }

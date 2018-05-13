@@ -2,7 +2,7 @@
 # *DO NOT EDIT*
 
 UNREALROOTPATH = /home/shisha/Projects/UnrealEngine
-GAMEPROJECTFILE =/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject
+GAMEPROJECTFILE =/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject
 
 TARGETS = \
 	UE4Client-Linux-Debug  \

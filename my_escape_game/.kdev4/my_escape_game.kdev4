@@ -3531,21 +3531,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_game-Linux-Debug
 
 [CustomBuildSystem][BuildConfig141][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig141][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig141][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3556,21 +3556,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_game-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig142][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig142][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig142][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3581,21 +3581,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_game-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig143][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig143][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig143][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3606,21 +3606,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_game-Linux-Test
 
 [CustomBuildSystem][BuildConfig144][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig144][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig144][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3631,21 +3631,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_game
 
 [CustomBuildSystem][BuildConfig145][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig145][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_game Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig145][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_game Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_game Linux Development -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3656,21 +3656,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_gameEditor-Linux-Debug
 
 [CustomBuildSystem][BuildConfig146][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig146][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Debug
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Debug
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig146][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Debug -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Debug -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3681,21 +3681,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_gameEditor-Linux-DebugGame
 
 [CustomBuildSystem][BuildConfig147][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig147][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux DebugGame
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux DebugGame
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig147][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux DebugGame -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux DebugGame -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3706,21 +3706,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_gameEditor-Linux-Shipping
 
 [CustomBuildSystem][BuildConfig148][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig148][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Shipping
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Shipping
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig148][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Shipping -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Shipping -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3731,21 +3731,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_gameEditor-Linux-Test
 
 [CustomBuildSystem][BuildConfig149][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig149][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Test
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Test
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig149][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Test -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Test -clean
 Enabled=true
 Environment=
 Executable=mono
@@ -3756,21 +3756,21 @@ BuildDir=file:///home/shisha/Projects/UnrealEngine
 Title=my_escape_gameEditor
 
 [CustomBuildSystem][BuildConfig150][ToolBuild]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=0
 
 [CustomBuildSystem][BuildConfig150][ToolConfigure]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Development
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -makefile -kdevelopfile  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" -game -engine  my_escape_gameEditor Linux Development
 Enabled=true
 Environment=
 Executable=mono
 Type=1
 
 [CustomBuildSystem][BuildConfig150][ToolClean]
-Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Development -clean
+Arguments=Engine/Binaries/DotNET/UnrealBuildTool.exe  -editorrecompile -project="/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject" my_escape_gameEditor Linux Development -clean
 Enabled=true
 Environment=
 Executable=mono

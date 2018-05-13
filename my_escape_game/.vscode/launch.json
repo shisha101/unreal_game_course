@@ -5,7 +5,7 @@
 			"name": "my_escape_game (Debug)",
 			"request": "launch",
 			"preLaunchTask": "my_escape_game Linux Debug Build",
-			"program": "/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Binaries/Linux/my_escape_game-Linux-Debug",
+			"program": "/home/shisha/Projects/unreal_game_course/my_escape_game/Binaries/Linux/my_escape_game-Linux-Debug",
 			"args": [
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -15,7 +15,7 @@
 			"name": "my_escape_game (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "my_escape_game Linux DebugGame Build",
-			"program": "/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Binaries/Linux/my_escape_game-Linux-DebugGame",
+			"program": "/home/shisha/Projects/unreal_game_course/my_escape_game/Binaries/Linux/my_escape_game-Linux-DebugGame",
 			"args": [
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -25,7 +25,7 @@
 			"name": "my_escape_game (Development)",
 			"request": "launch",
 			"preLaunchTask": "my_escape_game Linux Development Build",
-			"program": "/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Binaries/Linux/my_escape_game",
+			"program": "/home/shisha/Projects/unreal_game_course/my_escape_game/Binaries/Linux/my_escape_game",
 			"args": [
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -35,7 +35,7 @@
 			"name": "my_escape_game (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "my_escape_game Linux Shipping Build",
-			"program": "/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Binaries/Linux/my_escape_game-Linux-Shipping",
+			"program": "/home/shisha/Projects/unreal_game_course/my_escape_game/Binaries/Linux/my_escape_game-Linux-Shipping",
 			"args": [
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -45,7 +45,7 @@
 			"name": "my_escape_game (Test)",
 			"request": "launch",
 			"preLaunchTask": "my_escape_game Linux Test Build",
-			"program": "/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Binaries/Linux/my_escape_game-Linux-Test",
+			"program": "/home/shisha/Projects/unreal_game_course/my_escape_game/Binaries/Linux/my_escape_game-Linux-Test",
 			"args": [
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -57,7 +57,7 @@
 			"preLaunchTask": "my_escape_gameEditor Linux Debug Build",
 			"program": "/home/shisha/Projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
 			"args": [
-				"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject",
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject",
 				"-debug"
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -69,7 +69,7 @@
 			"preLaunchTask": "my_escape_gameEditor Linux DebugGame Build",
 			"program": "/home/shisha/Projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
 			"args": [
-				"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject",
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject",
 				"-debug"
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
@@ -81,7 +81,7 @@
 			"preLaunchTask": "my_escape_gameEditor Linux Development Build",
 			"program": "/home/shisha/Projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
 			"args": [
-				"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject"
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject"
 			],
 			"cwd": "/home/shisha/Projects/UnrealEngine",
 			"type": "lldb"
@@ -95,7 +95,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject\"",
+				"-project=\"/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject\"",
 				"-game",
 				"-engine"
 			],

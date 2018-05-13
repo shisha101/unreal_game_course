@@ -10,9 +10,9 @@ CONFIG -= qt
 TARGET = UE4 
 
 unrealRootPath=/home/shisha/Projects/UnrealEngine
-my_escape_gameRootPath=/home/shisha/Projects/unreal_game_course/section_03/my_escape_game
+my_escape_gameRootPath=/home/shisha/Projects/unreal_game_course/my_escape_game
 
-gameProjectFile=/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/my_escape_game.uproject
+gameProjectFile=/home/shisha/Projects/unreal_game_course/my_escape_game/my_escape_game.uproject
 build=mono $$unrealRootPath/Engine/Binaries/DotNET/UnrealBuildTool.exe
 
 args=$(ARGS)

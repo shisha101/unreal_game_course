@@ -4,8 +4,9 @@
 			"name": "UnrealEngine",
 			"includePath": [
 				"/home/shisha/Projects/UnrealEngine/Engine/Source",
-				"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Source",
-				"/home/shisha/Projects/unreal_game_course/section_03/my_escape_game/Source/my_escape_game",
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/Source",
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/my_escape_game",
+				"/home/shisha/Projects/unreal_game_course/my_escape_game/Source/my_escape_game",
 				"/home/shisha/Projects/UnrealEngine/Engine/Source/Runtime/Core/Public",
 				"/home/shisha/Projects/UnrealEngine/Engine/Source/Runtime/Core/Public/Internationalization",
 				"/home/shisha/Projects/UnrealEngine/Engine/Source/Runtime/Core/Public/Async",
