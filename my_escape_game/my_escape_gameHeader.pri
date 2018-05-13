@@ -9675,6 +9675,7 @@ HEADERS += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/RuntimeTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Public/ShaderComparisonTests.h" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Public/ScreenshotTools.h" \
+	"$$my_escape_gameRootPath/Source/my_escape_game/PositionReporter.h" \
 	"$$my_escape_gameRootPath/Source/my_escape_game/my_escape_game.h" \
 	"$$my_escape_gameRootPath/Source/my_escape_game/my_escape_gameGameModeBase.h" \
  
