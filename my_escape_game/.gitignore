@@ -71,4 +71,7 @@ DerivedDataCache/*
 
 # Ignore Starter Assets
 Content/StarterContent/*
- 
+
+# Ignore Core (shehab)
+core
+
