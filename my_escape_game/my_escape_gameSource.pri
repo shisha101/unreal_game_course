@@ -7487,6 +7487,7 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Shaders/ShaderComparisonTests.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/RuntimeTests/Source/RuntimeTests/Private/Slate/RichTextMarkupProcessingTest.cpp" \
 	"$$unrealRootPath/Engine/Plugins/Tests/ScreenshotTools/Source/ScreenshotTools/Private/ScreenshotTools.cpp" \
+	"$$my_escape_gameRootPath/Source/my_escape_game/OpenDoor.cpp" \
 	"$$my_escape_gameRootPath/Source/my_escape_game/PositionReporter.cpp" \
 	"$$my_escape_gameRootPath/Source/my_escape_game/my_escape_game.cpp" \
 	"$$my_escape_gameRootPath/Source/my_escape_game/my_escape_gameGameModeBase.cpp" \
