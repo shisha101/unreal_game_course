@@ -36,6 +36,13 @@
 *.sdf
 *.VC.db
 *.VC.opendb
+*.pri
+*.pro
+*.user
+*.workspace
+*.code-workspace
+*LitePreProcessor.txt
+*CompletionFolders.txt
 
 # Precompiled Assets
 SourceArt/**/*.png
