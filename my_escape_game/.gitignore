@@ -43,6 +43,7 @@
 *.code-workspace
 *LitePreProcessor.txt
 *CompletionFolders.txt
+Makefile
 
 # Precompiled Assets
 SourceArt/**/*.png
