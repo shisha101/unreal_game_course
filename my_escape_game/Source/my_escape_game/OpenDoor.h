@@ -15,7 +15,7 @@ class MY_ESCAPE_GAME_API UOpenDoor : public UActorComponent
 
 public:	
 	// Sets default values for this component's properties
-	UOpenDoor();
+    UOpenDoor();
 
 protected:
 	// Called when the game starts
@@ -26,8 +26,10 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
+bool TriggerVolumeOpenDoor();
+bool openDoor();
+
+private:
  UPROPERTY(EditAnywhere)
  ATriggerVolume* pressure_plate_;
-		
-	
 };
