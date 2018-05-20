@@ -39,6 +39,6 @@ bool UOpenDoor::TriggerVolumeOpenDoor()
 
 bool UOpenDoor::openDoor()
 {
-    return GetOwner()->SetActorRotation(FRotator(0.f, -120.f, 0.f));
+    return GetOwner()->SetActorRotation(FRotator(0.f, -170.f, 0.f));
 }
 
