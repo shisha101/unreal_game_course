@@ -19,13 +19,6 @@ UPositionReporter::UPositionReporter()
 void UPositionReporter::BeginPlay()
 {
     Super::BeginPlay();
-    const auto object_location = GetOwner()->GetActorLocation();
-    const auto rotation_euler_deg = GetOwner()->GetActorRotation().Euler();
-
-    UE_LOG(LogTemp,Warning,TEXT("%s is in the BeginPlay function Postion: x=%f, y=%f, z=%f. Rotation (Euler): r=%f, p=%f, y=%f ."),
-           *GetOwner()->GetHumanReadableName(),
-           object_location.X, object_location.Y, object_location.Z,
-           rotation_euler_deg.X, rotation_euler_deg.Y, rotation_euler_deg.Z);
 }
 
 
@@ -34,6 +27,6 @@ void UPositionReporter::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+    // ...
 }
 
