@@ -28,8 +28,18 @@ public:
 private:
 bool TriggerVolumeOpenDoor();
 bool openDoor();
+bool closeDoor();
+void delayedClose();
 
 private:
  UPROPERTY(EditAnywhere)
  ATriggerVolume* pressure_plate_;
+
+ UPROPERTY(EditAnywhere)
+ float door_open_angle_ = 160.f;
+
+ UPROPERTY(EditAnywhere)
+ float delay_to_door_close_ = 0.2f;
+
+ float door_open_time_;
 };
