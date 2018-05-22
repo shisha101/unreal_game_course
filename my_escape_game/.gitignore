@@ -43,6 +43,11 @@
 *.code-workspace
 *LitePreProcessor.txt
 *CompletionFolders.txt
+*.kdev4
+.idea/*
+.kdev4/*
+.vscode/*
+CMakeLists.txt
 Makefile
 
 # Precompiled Assets
