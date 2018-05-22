@@ -7,39 +7,39 @@
 #include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
 
-
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MY_ESCAPE_GAME_API UOpenDoor : public UActorComponent
 {
-	GENERATED_BODY()
+  GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-    UOpenDoor();
+public:
+  // Sets default values for this component's properties
+  UOpenDoor();
 
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
+  // Called when the game starts
+  virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-private:
-bool TriggerVolumeOpenDoor();
-bool openDoor();
-bool closeDoor();
-void delayedClose();
+public:
+  // Called every frame
+  virtual void TickComponent(float DeltaTime, ELevelTick TickType,
+                             FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
- UPROPERTY(EditAnywhere)
- ATriggerVolume* pressure_plate_;
+  bool TriggerVolumeOpenDoor();
+  bool openDoor();
+  bool closeDoor();
+  void delayedClose();
 
- UPROPERTY(EditAnywhere)
- float door_open_angle_ = 160.f;
+private:
+  UPROPERTY(EditAnywhere)
+  ATriggerVolume* pressure_plate_;
 
- UPROPERTY(EditAnywhere)
- float delay_to_door_close_ = 0.2f;
+  UPROPERTY(EditAnywhere)
+  float door_open_angle_ = 160.f;
 
- float door_open_time_;
+  UPROPERTY(EditAnywhere)
+  float delay_to_door_close_ = 0.2f;
+
+  float door_open_time_;
 };
