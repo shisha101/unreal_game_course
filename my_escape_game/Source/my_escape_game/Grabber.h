@@ -2,8 +2,11 @@
 
 #pragma once
 
+#include <memory>
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
+#include "Components/InputComponent.h"
 #include "Grabber.generated.h"
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -25,6 +28,17 @@ public:
                              FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
+  bool componentsValid();
+  bool hasPhysicsHandleComponent();
+  bool hasInputComponent();
+  void configureInputComponent();
+  void grabObject();
+  void releaseObject();
+
+private:
   UPROPERTY(EditAnywhere)
   float player_grabbing_reach_ = 50.f;
+
+  UPhysicsHandleComponent* physics_handle_;
+  UInputComponent* input_component_;
 };
