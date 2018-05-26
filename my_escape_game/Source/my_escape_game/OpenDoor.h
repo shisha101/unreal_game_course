@@ -30,16 +30,20 @@ private:
   bool openDoor();
   bool closeDoor();
   void delayedClose();
+  bool checkTriggerVolumeComponent();
 
 private:
   UPROPERTY(EditAnywhere)
-  ATriggerVolume* pressure_plate_;
+  ATriggerVolume* pressure_plate_ = nullptr;
 
   UPROPERTY(EditAnywhere)
   float door_open_angle_ = 160.f;
 
   UPROPERTY(EditAnywhere)
   float delay_to_door_close_ = 0.2f;
+
+  UPROPERTY(EditAnywhere)
+  float pressure_plate_trigger_weight_ = 9.f;  // [kg]
 
   float door_open_time_;
 };

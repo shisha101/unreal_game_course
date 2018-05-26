@@ -28,7 +28,7 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
   Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-  if (physics_handle_->GetGrabbedComponent() != nullptr)
+  if (physics_handle_ != nullptr && physics_handle_->GetGrabbedComponent() != nullptr)
   {
     physics_handle_->SetTargetLocation(getGrabReachLocationInWorld());
   }
@@ -67,17 +67,12 @@ void UGrabber::grabObject()
       grabbableObject.GetComponent(), NAME_None, grabbableObject.GetActor()->GetActorLocation(), FRotator(0, 0, 0));
 }
 
-void UGrabber::releaseObject()
-{
-  UE_LOG(LogTemp, Warning, TEXT("attempting to release object"));
-  physics_handle_->ReleaseComponent();
-}
+void UGrabber::releaseObject() { physics_handle_->ReleaseComponent(); }
 
 FVector UGrabber::getGrabReachLocationInWorld()
 {
   FVector view_location;
   FRotator view_orientation;
-  //  GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(view_location, view_orientation);
   GetOwner()->GetActorEyesViewPoint(view_location, view_orientation);
   return view_location + view_orientation.Vector() * player_grabbing_reach_;
 }

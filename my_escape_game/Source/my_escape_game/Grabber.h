@@ -37,8 +37,8 @@ private:
   FHitResult getPhysicsObjectInReach();
 
 private:
-  UPhysicsHandleComponent* physics_handle_;
-  UInputComponent* input_component_;
+  UPhysicsHandleComponent* physics_handle_{ nullptr };
+  UInputComponent* input_component_{ nullptr };
 
   UPROPERTY(EditAnywhere)
   float player_grabbing_reach_ = 100.f;
