@@ -15,10 +15,7 @@ UOpenDoor::UOpenDoor()
 }
 
 // Called when the game starts
-void UOpenDoor::BeginPlay()
-{
-  Super::BeginPlay();
-}
+void UOpenDoor::BeginPlay() { Super::BeginPlay(); }
 
 // Called every frame
 void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -30,10 +27,9 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 
 bool UOpenDoor::TriggerVolumeOpenDoor()
 {
-  if (!pressure_plate_)
-    return false;
-  if (pressure_plate_->IsOverlappingActor(GetWorld()->GetFirstPlayerController()->GetPawn()))
-    return openDoor();
+  if (!pressure_plate_) return false;
+
+  if (pressure_plate_->IsOverlappingActor(GetWorld()->GetFirstPlayerController()->GetPawn())) return openDoor();
   return false;
 }
 
@@ -43,14 +39,10 @@ bool UOpenDoor::openDoor()
   return GetOwner()->SetActorRotation(FRotator(0.f, door_open_angle_, 0.f));
 }
 
-bool UOpenDoor::closeDoor()
-{
-  return GetOwner()->SetActorRotation(FRotator(0.f, -90.0f, 0.f));
-}
+bool UOpenDoor::closeDoor() { return GetOwner()->SetActorRotation(FRotator(0.f, -90.0f, 0.f)); }
 
 void UOpenDoor::delayedClose()
 {
   const auto current_time = GetWorld()->GetTimeSeconds();
-  if (current_time - door_open_time_ >= delay_to_door_close_)
-    closeDoor();
+  if (current_time - door_open_time_ >= delay_to_door_close_) closeDoor();
 }
