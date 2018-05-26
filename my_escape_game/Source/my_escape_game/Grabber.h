@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include <memory>
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "PhysicsEngine/PhysicsHandleComponent.h"
@@ -29,16 +28,18 @@ public:
 
 private:
   bool componentsValid();
-  bool hasPhysicsHandleComponent();
-  bool hasInputComponent();
   void configureInputComponent();
+  bool hasInputComponent();
+  bool hasPhysicsHandleComponent();
   void grabObject();
   void releaseObject();
+  FVector getGrabReachLocationInWorld();
+  FHitResult getPhysicsObjectInReach();
 
 private:
-  UPROPERTY(EditAnywhere)
-  float player_grabbing_reach_ = 50.f;
-
   UPhysicsHandleComponent* physics_handle_;
   UInputComponent* input_component_;
+
+  UPROPERTY(EditAnywhere)
+  float player_grabbing_reach_ = 100.f;
 };

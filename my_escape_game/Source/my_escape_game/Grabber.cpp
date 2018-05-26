@@ -29,20 +29,10 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
   Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-  FVector view_location;
-  FRotator view_orientation;
-  //  GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(view_location, view_orientation);
-  GetOwner()->GetActorEyesViewPoint(view_location, view_orientation);
-  const auto ray_end_point = view_location + view_orientation.Vector() * player_grabbing_reach_;
-
-  DrawDebugLine(GetWorld(), view_location, ray_end_point, FColor(255, 0, 0), false, -1.f, 0, 1);
-
-  FHitResult object_hit;
-  const FCollisionQueryParams collision_query_params(FName(""), false, GetOwner());
-  if (GetWorld()->LineTraceSingleByObjectType(object_hit, view_location, ray_end_point,
-                                              FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
-                                              FCollisionQueryParams(FName(""), false, GetOwner())))
-    UE_LOG(LogTemp, Warning, TEXT("can grab %s"), *object_hit.GetActor()->GetName());
+  if (physics_handle_->GetGrabbedComponent() != nullptr)
+  {
+    physics_handle_->SetTargetLocation(getGrabReachLocationInWorld());
+  }
 }
 
 bool UGrabber::componentsValid()
@@ -76,10 +66,41 @@ void UGrabber::configureInputComponent()
 
 void UGrabber::grabObject()
 {
-  UE_LOG(LogTemp, Warning, TEXT("attempting to grab object"))
+  UE_LOG(LogTemp, Warning, TEXT("attempting to grab object"));
+  const auto grabbableObject = getPhysicsObjectInReach();
+  if (grabbableObject.GetActor() == nullptr)
+    return;
+  physics_handle_->GrabComponentAtLocationWithRotation(
+      grabbableObject.GetComponent(), NAME_None, grabbableObject.GetActor()->GetActorLocation(), FRotator(0, 0, 0));
 }
 
 void UGrabber::releaseObject()
 {
-  UE_LOG(LogTemp, Warning, TEXT("attempting to release object"))
+  UE_LOG(LogTemp, Warning, TEXT("attempting to release object"));
+  physics_handle_->ReleaseComponent();
+}
+
+FVector UGrabber::getGrabReachLocationInWorld()
+{
+  FVector view_location;
+  FRotator view_orientation;
+  //  GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(view_location, view_orientation);
+  GetOwner()->GetActorEyesViewPoint(view_location, view_orientation);
+  return view_location + view_orientation.Vector() * player_grabbing_reach_;
+}
+
+FHitResult UGrabber::getPhysicsObjectInReach()
+{
+  FVector view_location;
+  FRotator view_orientation;
+  GetOwner()->GetActorEyesViewPoint(view_location, view_orientation);
+  const auto grab_reach = getGrabReachLocationInWorld();
+
+  FHitResult object_hit;
+  const FCollisionQueryParams collision_query_params(FName(""), false, GetOwner());
+  if (GetWorld()->LineTraceSingleByObjectType(object_hit, view_location, grab_reach,
+                                              FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+                                              FCollisionQueryParams(FName(""), false, GetOwner())))
+    UE_LOG(LogTemp, Warning, TEXT("can grab %s"), *object_hit.GetActor()->GetName());
+  return object_hit;
 }
