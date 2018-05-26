@@ -21,8 +21,7 @@ void UGrabber::BeginPlay()
 
   UE_LOG(LogTemp, Warning, TEXT("grabber component init"));
 
-  if (componentsValid())
-    configureInputComponent();
+  if (componentsValid()) configureInputComponent();
 }
 
 // Called every frame
@@ -35,16 +34,12 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
   }
 }
 
-bool UGrabber::componentsValid()
-{
-  return hasPhysicsHandleComponent() && hasInputComponent();
-}
+bool UGrabber::componentsValid() { return hasPhysicsHandleComponent() && hasInputComponent(); }
 
 bool UGrabber::hasPhysicsHandleComponent()
 {
   physics_handle_ = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
-  if (physics_handle_ != nullptr)
-    return true;
+  if (physics_handle_ != nullptr) return true;
   UE_LOG(LogTemp, Error, TEXT("Object %s could not find PhysicsHandler component."), *GetOwner()->GetName());
   return false;
 }
@@ -52,8 +47,7 @@ bool UGrabber::hasPhysicsHandleComponent()
 bool UGrabber::hasInputComponent()
 {
   input_component_ = GetOwner()->FindComponentByClass<UInputComponent>();
-  if (input_component_ != nullptr)
-    return true;
+  if (input_component_ != nullptr) return true;
   UE_LOG(LogTemp, Error, TEXT("Object %s could not find Input component."), *GetOwner()->GetName());
   return false;
 }
@@ -68,8 +62,7 @@ void UGrabber::grabObject()
 {
   UE_LOG(LogTemp, Warning, TEXT("attempting to grab object"));
   const auto grabbableObject = getPhysicsObjectInReach();
-  if (grabbableObject.GetActor() == nullptr)
-    return;
+  if (grabbableObject.GetActor() == nullptr) return;
   physics_handle_->GrabComponentAtLocationWithRotation(
       grabbableObject.GetComponent(), NAME_None, grabbableObject.GetActor()->GetActorLocation(), FRotator(0, 0, 0));
 }

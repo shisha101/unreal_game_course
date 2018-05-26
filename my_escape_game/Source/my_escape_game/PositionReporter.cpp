@@ -14,10 +14,7 @@ UPositionReporter::UPositionReporter()
 }
 
 // Called when the game starts
-void UPositionReporter::BeginPlay()
-{
-  Super::BeginPlay();
-}
+void UPositionReporter::BeginPlay() { Super::BeginPlay(); }
 
 // Called every frame
 void UPositionReporter::TickComponent(float DeltaTime, ELevelTick TickType,
