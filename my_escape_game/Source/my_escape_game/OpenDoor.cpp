@@ -49,13 +49,17 @@ bool UOpenDoor::TriggerVolumeOpenDoor()
   return true;
 }
 
-bool UOpenDoor::openDoor()
+void UOpenDoor::openDoor()
 {
   door_open_time_ = GetWorld()->GetTimeSeconds();
-  return GetOwner()->SetActorRotation(FRotator(0.f, door_open_angle_, 0.f));
+  open_door_request_.Broadcast();
 }
 
-bool UOpenDoor::closeDoor() { return GetOwner()->SetActorRotation(FRotator(0.f, -90.0f, 0.f)); }
+void UOpenDoor::closeDoor()
+{
+  close_door_request_.Broadcast();
+  GetOwner()->SetActorRotation(FRotator(0.f, -90.0f, 0.f));
+}
 
 void UOpenDoor::delayedClose()
 {

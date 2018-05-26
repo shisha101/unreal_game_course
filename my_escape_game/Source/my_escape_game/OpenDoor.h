@@ -7,6 +7,9 @@
 #include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOpenDoorRequest);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FCloseDoorRequest);
+
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MY_ESCAPE_GAME_API UOpenDoor : public UActorComponent
 {
@@ -27,10 +30,15 @@ public:
 
 private:
   bool TriggerVolumeOpenDoor();
-  bool openDoor();
-  bool closeDoor();
+  void openDoor();
+  void closeDoor();
   void delayedClose();
   bool checkTriggerVolumeComponent();
+
+  UPROPERTY(BlueprintAssignable)
+  FOpenDoorRequest open_door_request_;
+  UPROPERTY(BlueprintAssignable)
+  FCloseDoorRequest close_door_request_;
 
 private:
   UPROPERTY(EditAnywhere)
