@@ -7,8 +7,7 @@
 #include "Engine/TriggerVolume.h"
 #include "OpenDoor.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOpenDoorRequest);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(FCloseDoorRequest);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDoorEvent);
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class MY_ESCAPE_GAME_API UOpenDoor : public UActorComponent
@@ -29,29 +28,17 @@ public:
                              FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
-  bool TriggerVolumeOpenDoor();
-  void openDoor();
-  void closeDoor();
-  void delayedClose();
+  bool checkDoorTrigger();
   bool checkTriggerVolumeComponent();
 
-  UPROPERTY(BlueprintAssignable)
-  FOpenDoorRequest open_door_request_;
-  UPROPERTY(BlueprintAssignable)
-  FCloseDoorRequest close_door_request_;
-
 private:
+  UPROPERTY(BlueprintAssignable)
+  FDoorEvent open_door_request_;
+  UPROPERTY(BlueprintAssignable)
+  FDoorEvent close_door_request_;
   UPROPERTY(EditAnywhere)
   ATriggerVolume* pressure_plate_ = nullptr;
 
   UPROPERTY(EditAnywhere)
-  float door_open_angle_ = 160.f;
-
-  UPROPERTY(EditAnywhere)
-  float delay_to_door_close_ = 0.2f;
-
-  UPROPERTY(EditAnywhere)
   float pressure_plate_trigger_weight_ = 9.f;  // [kg]
-
-  float door_open_time_;
 };

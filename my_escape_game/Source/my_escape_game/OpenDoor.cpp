@@ -26,11 +26,10 @@ void UOpenDoor::BeginPlay()
 void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
   Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-  TriggerVolumeOpenDoor();
-  delayedClose();
+  checkDoorTrigger() ? open_door_request_.Broadcast() : close_door_request_.Broadcast();
 }
 
-bool UOpenDoor::TriggerVolumeOpenDoor()
+bool UOpenDoor::checkDoorTrigger()
 {
   if (!pressure_plate_) return false;
 
@@ -43,28 +42,7 @@ bool UOpenDoor::TriggerVolumeOpenDoor()
     total_wegiht_on_trigger_volume += actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
   }
 
-  if (total_wegiht_on_trigger_volume < pressure_plate_trigger_weight_) return false;
-
-  openDoor();
-  return true;
-}
-
-void UOpenDoor::openDoor()
-{
-  door_open_time_ = GetWorld()->GetTimeSeconds();
-  open_door_request_.Broadcast();
-}
-
-void UOpenDoor::closeDoor()
-{
-  close_door_request_.Broadcast();
-  GetOwner()->SetActorRotation(FRotator(0.f, -90.0f, 0.f));
-}
-
-void UOpenDoor::delayedClose()
-{
-  const auto current_time = GetWorld()->GetTimeSeconds();
-  if (current_time - door_open_time_ >= delay_to_door_close_) closeDoor();
+  return total_wegiht_on_trigger_volume >= pressure_plate_trigger_weight_;
 }
 
 bool UOpenDoor::checkTriggerVolumeComponent()
